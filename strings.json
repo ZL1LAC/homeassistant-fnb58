@@ -1,0 +1,10 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "FNIRSI FNB58 USB Fast Charge Tester",
+        "description": "{note}"
+      }
+    }
+  }
+}
