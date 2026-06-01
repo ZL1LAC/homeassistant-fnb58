@@ -1,7 +1,7 @@
 {
   "domain": "fnb58",
   "name": "FNIRSI FNB58 USB Fast Charge Tester",
-  "version": "1.6.2",
+  "version": "1.6.3",
   "config_flow": true,
   "dependencies": ["bluetooth"],
   "requirements": ["bleak-retry-connector>=3.6.0"],
@@ -10,6 +10,6 @@
       "local_name": "FNB58-*"
     }
   ],
-  "codeowners": [],
+  "codeowners": ["@ZL1LAC"],
   "iot_class": "local_push"
 }
