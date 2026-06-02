@@ -13,10 +13,16 @@ Read-only over Bluetooth: live **voltage**, **current**, and **power**, plus **e
 
 ### HACS
 
+**Default store (after inclusion):** search **FNIRSI FNB58** under HACS → Integrations.
+
+**Custom repository (until then):**
+
 1. Open **HACS** → **Integrations** → **⋮** → **Custom repositories**.
 2. Add `https://github.com/ZL1LAC/homeassistant-fnb58` as category **Integration**.
 3. Search for **FNIRSI FNB58 USB Fast Charge Tester**, download, and restart Home Assistant.
 4. **Settings → Devices & services → Add integration**.
+
+See [HACS_DEFAULT.md](HACS_DEFAULT.md) if you are submitting this integration to the HACS default store.
 
 ### Manual
 

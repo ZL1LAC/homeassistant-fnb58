@@ -1,7 +1,9 @@
 {
   "domain": "fnb58",
   "name": "FNIRSI FNB58 USB Fast Charge Tester",
-  "version": "1.6.3",
+  "version": "1.7.0",
+  "documentation": "https://github.com/ZL1LAC/homeassistant-fnb58",
+  "issue_tracker": "https://github.com/ZL1LAC/homeassistant-fnb58/issues",
   "config_flow": true,
   "dependencies": ["bluetooth"],
   "requirements": ["bleak-retry-connector>=3.6.0"],
