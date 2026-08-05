@@ -50,11 +50,21 @@ config/
 | Power | Live power (W) |
 | Energy | Host-side energy total (Wh) |
 | Capacity | Host-side capacity total (Ah) |
+| Reset totals | Button that zeroes the two totals above |
+
+The three live measurements report **unavailable** while the meter is switched off or out of
+range, rather than holding the last reading indefinitely.
+
+The two totals are integrated in Home Assistant from the live readings. They **survive a restart
+or reload**, and count **forward flow only** — reverse current is not subtracted, which keeps
+them valid as `total_increasing` and usable in the Energy dashboard. Use the **Reset totals**
+button to zero them; it only affects Home Assistant and never writes to the meter.
 
 ## Notes
 
 - The meter does not need to stay powered on; the integration reconnects when it is on and in range.
 - BLE exposes live measurements only. Fast-charge trigger, clear records, and similar actions use the device UI or USB tools—not this integration.
+- For bug reports, attach **Settings → Devices & services → FNB58 → ⋮ → Download diagnostics**. It includes the connection state, packet counters, and the last raw BLE frame, with the Bluetooth address redacted.
 - Protocol based on community reverse engineering ([parkerlreed gist](https://gist.github.com/parkerlreed/0ce45e907ce536a0541afb90b5b49350), [fnirsi-usb-power-data-logger](https://github.com/baryluk/fnirsi-usb-power-data-logger)).
 
 ## License

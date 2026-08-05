@@ -1,0 +1,9 @@
+{
+  "entity": {
+    "button": {
+      "reset_totals": {
+        "default": "mdi:counter"
+      }
+    }
+  }
+}
